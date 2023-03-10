@@ -1,0 +1,475 @@
+/* FORM */
+
+.dsf {
+  /* Contendor del formulario */
+  /* width: 100%; */
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* STEPS */
+
+.dsf__step-1-container {
+  /* Contenedor del paso 1 */
+}
+.dsf__step-2-container {
+  /* Contenedor del paso 2 */
+}
+.dsf__step-3-container {
+  /* Contenedor del paso 3 */
+}
+
+/* AMOUNTS */
+
+.dsf__amount-option-list {
+  /* Contenedor de la sección de 'montos' */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.dsf__amount-option {
+  /* Estilos por defecto de cada opción */
+  padding: 0.5rem;
+  color: #6b7280;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  border-color: #d1d5db;
+  border-style: solid;
+  cursor: pointer;
+  grid-column: span 1 / span 1;
+}
+.dsf__amount-option--active {
+  /* Estilo de la opción 'otro monto' cuando se encuentra en modo edición */
+  padding: 0.5rem;
+  color: #6b7280;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  border-color: #d1d5db;
+  border-style: solid;
+  cursor: pointer;
+  grid-column: span 1 / span 1;
+}
+.dsf__amount-option--selected {
+  /* Estilos de la opción seleccionada*/
+  color: var(--main-color);
+  border-color: var(--main-color);
+  font-weight: bold;
+  border-width: 2px;
+}
+.dsf__amount-option:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  font-weight: bold;
+  border-width: 2px;
+}
+.dsf__amount-option-input {
+  /* Input de la opción 'otro monto' cuando se encuentra en modo edición */
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
+}
+.dsf__amount-option-label {
+  /* Detalle del monto */
+  margin-top: 12px;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.25rem;
+}
+
+/* RECURRENCY */
+
+.dsf__recurrency {
+  /* Contenedor de la sección 'recurrencia' */
+}
+.dsf__recurrency-option-list {
+  /* Contenedor de las opciones de recurrencia */
+  display: flex;
+  margin-top: 20px;
+}
+.dsf__recurrency-option {
+  /* Contenedor del label y el radio button */
+  display: flex;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.dsf__recurrency-option-label {
+  /* label de la opción */
+  color: #6b7280;
+  flex: none;
+}
+.dsf__recurrency-option--selected .dsf__recurrency-option-label {
+  /* Estilos del label cuando la opción se encuentra seleccionada */
+  color: var(--main-color);
+  font-weight: 700;
+}
+.dsf__recurrency-option-radio {
+  /* estilos del radio button */
+  display: flex;
+  margin: 0;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #d1d5db;
+  border-style: solid;
+  cursor: pointer;
+  flex: none;
+}
+.dsf__recurrency-option--selected .dsf__recurrency-option-radio {
+  /* Estilos del radio button cuando la opción se encuentra seleccionada */
+  border-color: var(--main-color);
+}
+.dsf__recurrency-option-radio-inner {
+  /* estilos del círculo interno del radio button */
+  display: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+.dsf__recurrency-option--selected .dsf__recurrency-option-radio-inner {
+  /* estilos del círculo interno del radio button cuando la opción se encuentra seleccionada */
+  display: block;
+  background-color: var(--main-color);
+}
+
+/* ALLOW UPGRADE */
+
+.dsf__allow-upgrade {
+  /* Contenedor de la sección 'aumento de la donación' */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.dsf__allow-upgrade-checkbox {
+  /* Estilos del 'checkbox' */
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  border-style: solid;
+  padding: 1px;
+  cursor: pointer;
+}
+.dsf__allow-upgrade-label {
+  /* Estilos del label */
+  margin-left: 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.dsf__allow-upgrade-checkbox--checked {
+  /* Estilos del 'checkbox' checked */
+  background-color: var(--main-color);
+  color: #ffffff;
+  border-color: var(--main-color);
+  padding: 1px;
+}
+
+/* BUTTONS */
+
+.dsf__buttons-container {
+  /* Contenedor de los botones */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+}
+.dsf__button-next {
+  /* Estilos del botón 'siguiente' */
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: var(--main-color);
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dsf__button-next:hover {
+  filter: brightness(90%);
+}
+.dsf__button-next:focus {
+  outline: 0;
+}
+.dsf__button-prev {
+  /* Estilos del botón 'volver' */
+  padding-bottom: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 40px;
+  margin-right: 60px;
+  color: #4b5563;
+  width: auto;
+  border-bottom-width: 1px;
+  border-color: #4b5563;
+  border-style: solid;
+  cursor: pointer;
+}
+.dsf__button-prev:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+.dsf__button-prev:focus {
+  outline: 0;
+}
+
+/* DONOR */
+
+.dsf__donor {
+  /* Contenedor de la sección 'datos del donante' */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+/* DSF GROUP */
+
+.dsf__group {
+  /* Contenedor de cada grupo compuesto por label + input o label + select */
+  display: flex;
+  flex-direction: column;
+}
+.dsf__group label {
+  /* Estilos del label */
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.dsf__group input,
+.dsf__group select {
+  /* Estilos para input y select */
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #6b7280;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  border-style: solid;
+}
+.dsf__group select option {
+  /* Estilo de las opciones en el select */
+  color: #6b7280;
+  background-color: transparent;
+}
+.dsf__donor .dsf__group input::placeholder {
+  /* Estilos del placeholder en inputs */
+  color: transparent;
+}
+.dsf__group--error input::placeholder {
+  /* Estilos del placeholder cuando un input presenta errores */
+  color: transparent;
+}
+.dsf__group--active input,
+.dsf__group--active select {
+  /* Estilos de input y select cuando se encuentran activos */
+}
+.dsf__group--error label {
+  /* Estilos del label al presentar errores */
+  color: #dc2626;
+}
+.dsf__group--error input,
+.dsf__group--error select {
+  /* Estilos de input y select al presentar errores */
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+/* PAYMENT */
+
+.dsf__payment {
+  /* Contenedor de la sección 'método de pago' */
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+.payment-method-cc-number {
+  grid-column: span 4 / span 4;
+}
+.payment-method-cc-method-name {
+  grid-column: span 2 / span 2;
+}
+.payment-method-cc-verification-number {
+  grid-column: span 3 / span 3;
+}
+.payment-method-cc-expiration {
+  grid-column: span 3 / span 3;
+}
+.payment-method-cardholder-id-type {
+  grid-column: span 2 / span 2;
+}
+.payment-method-cardholder-id-number {
+  grid-column: span 4 / span 4;
+}
+.payment-method-cardholder-name {
+  grid-column: span 6 / span 6;
+}
+.payment-method-cardholder-name input::placeholder {
+  color: transparent;
+}
+.payment-method-cardholder-id-number input::placeholder {
+  color: transparent;
+}
+
+/* SECURITY MESSAGE */
+
+.dsf__security-message {
+  /* Contenedor del mensaje SSL/TLS1.2 */
+  display: flex;
+  margin-top: 10px;
+  color: #6b7280;
+}
+.dsf__security-message p {
+  padding-left: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  flex: 1 1 auto;
+  width: 100%;
+}
+.dsf__security-message svg {
+  height: 1.25rem;
+}
+
+/* THANKS MESSAGE */
+.dsf__thanks-message {
+  /* Contenedor del mensaje de agradecimiento */
+  color: #6b7280;
+  font-size: 16px;
+  text-align: center;
+}
+.dsf__thanks-message a {
+  color: var(--main-color);
+}
+
+/* ERROR MESSAGE */
+.dsf__error-message {
+  /* Contenedor del mensaje de errores */
+  color: #dc2626;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* LEGAL NOTICE */
+.dsf__legal-notice-container {
+  /* Contenedor de la sección 'terminos y condiciones' */
+   margin-top: 16px;
+}
+
+.dsf__legal-notice {
+  /* opción terminos y condiciones' */
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.dsf__legal-notice-checkbox {
+  /* Estilos del 'checkbox' */
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  border-style: solid;
+  padding: 1px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.dsf__legal-notice-checkbox--checked {
+  /* Estilos del 'checkbox' checked */
+  background-color: var(--main-color);
+  color: #ffffff;
+  border-color: var(--main-color);
+  padding: 1px;
+}
+.dsf__legal-notice-label {
+  /* Estilos del label */
+  margin-left: 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.dsf__legal-notice-label a {
+  /* Estilos del link 'mas información*/
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.dsf__legal-notice--error .dsf__legal-notice-label {
+  color: #dc2626;
+}
+.dsf__legal-notice--error .dsf__legal-notice-label a {
+  color: #dc2626;
+}
+.dsf__legal-notice--error .dsf__legal-notice-checkbox {
+  border-color: #dc2626;
+}
+
+/* WIDGETS */
+.dsf__widgets {
+  /* Contenedor de los campos predefinidos y personalizados*/
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 390px) {
+  .dsf__donor {
+    /* Contenedor de la sección 'datos del donante' */
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .dsf__buttons-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .payment-method-cc-number {
+    grid-column: span 6 / span 6;
+  }
+  .payment-method-cc-method-name {
+    grid-column: span 6 / span 6;
+  }
+  .payment-method-cc-verification-number {
+    grid-column: span 3 / span 3;
+  }
+  .payment-method-cc-expiration {
+    grid-column: span 3 / span 3;
+  }
+  .payment-method-cardholder-id-type {
+    grid-column: span 3 / span 3;
+  }
+  .payment-method-cardholder-id-number {
+    grid-column: span 3 / span 3;
+  }
+  .payment-method-cardholder-name {
+    grid-column: span 6 / span 6;
+  }
+  .payment-method-cardholder-name input::placeholder {
+    color: transparent;
+  }
+  .payment-method-cardholder-id-number input::placeholder {
+    color: transparent;
+  }
+
+  .dsf__button-prev {
+    margin-left: 60px;
+  }
+}
